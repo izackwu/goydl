@@ -70,10 +70,12 @@ func TestDownloadInfo(t *testing.T) {
 	info, err := youtubeDl.GetInfo()
 
 	if err != nil {
+		t.Logf("Error: %s", err)
 		t.Fail()
 	}
 
-	if info.Title != "Rick Astley - Never Gonna Give You Up" {
+	if info.Title != "Rick Astley - Never Gonna Give You Up (Official Music Video)" {
+		t.Logf("Title: %s", info.Title)
 		t.Fail()
 	}
 }
