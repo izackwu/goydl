@@ -1,13 +1,11 @@
 package goydl_test
 
 import (
-	"testing"
-
 	"strings"
-
+	"testing"
 	"time"
 
-	"github.com/BrianAllred/goydl"
+	"github.com/izackwu/goydl"
 )
 
 func TestBoolOption(t *testing.T) {
